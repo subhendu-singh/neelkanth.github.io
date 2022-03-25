@@ -1,0 +1,21 @@
+	.box {
+		position: fixed;
+		bottom: 0px;
+		right: 10px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        height: 60px;
+        margin: 0 auto 0 auto;
+        transform-origin: top;
+		z-index: 1 !important;
+    }
+    .bounce-1 {
+        animation-name: bounce-1;
+        animation-timing-function: ease;
+    }
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        30%  { transform: translateY(-100px); }
+        50%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
